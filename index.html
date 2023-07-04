@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/media-query.css">
+
+        <title>Media Query</title>
+    </head>
+    <body onresize="mudouTamanho();">
+        <header>
+            <h1>Meu Site</h1>
+
+            <span
+                id="burger"
+                class="material-icons"
+                onclick="clickMenu()">
+                menu
+            </span>
+
+            <menu id="itens">
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <main>
+            <article>
+                <h2>Testando Media Queries</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique voluptate quam quis dolorem molestiae saepe ad,
+                    obcaecati quae voluptatum repellendus excepturi, culpa
+                    voluptatibus autem labore aliquam provident consequuntur.
+                    Sed, quae. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quos dolorem quisquam eligendi magnam
+                    nesciunt doloremque, dignissimos est voluptate sed veniam
+                    ipsa obcaecati, veritatis, non ab voluptatem ipsum ullam
+                    excepturi praesentium!
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet saepe obcaecati doloribus suscipit veniam
+                    voluptatibus numquam similique provident quasi ipsam facere
+                    rerum nulla omnis, nihil, quo fugit minima? Repellendus,
+                    quaerat? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Saepe, blanditiis. Sit maxime beatae necessitatibus
+                    fuga dignissimos neque tenetur iusto cumque assumenda?
+                    Quisquam provident beatae, modi animi architecto
+                    reprehenderit distinctio expedita. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quaerat quis qui,
+                    nesciunt optio aliquam labore aut earum praesentium impedit
+                    dignissimos veniam laboriosam quisquam perferendis ipsam,
+                    veritatis possimus, quo repellat sit.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque, ipsum voluptatibus rerum numquam reprehenderit enim
+                    temporibus! Ex, cumque expedita, sed ab adipisci
+                    perferendis unde ipsa quod ad ratione eos repellat.
+                </p>
+            </article>
+        </main>
+
+        <script>
+            function mudouTamanho()
+            {
+                if(window.innerWidth >= 768)
+                {
+                    itens.style.display = "block";
+                }
+                else
+                {
+                    itens.style.display = "none";
+                }
+            }
+
+            function clickMenu()
+            {
+                if(itens.style.display == "block")
+                {
+                    itens.style.display = "none";
+                }
+                else
+                {
+                    itens.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
